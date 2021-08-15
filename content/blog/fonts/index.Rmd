@@ -14,7 +14,37 @@ subtitle: Use an embedded font (no CSS required!), rely on system fonts reliably
 tags:
 - style
 title: Style your site typography
+output:
+  blogdown::html_page:
+    toc: false
 ---
+
+```{r packages, echo=FALSE, results='hide', message=FALSE}
+library(knitr)
+```
+
+```{r global_options, echo=FALSE, results='hide', message=FALSE}
+options(
+   digits   = 7,
+   width    = 84,
+   continue = " ",
+   prompt   = "> ",
+   warn = 0)
+opts_chunk$set(
+   dev        = 'png',
+   fig.align  = 'center',
+   out.width  = "100%",
+   echo       = FALSE,
+   eval       = TRUE,
+   cache      = FALSE,
+   collapse   = TRUE,
+   results    = 'hide',
+   message    = FALSE,
+   warning    = FALSE,
+   tidy       = FALSE)
+```
+
+
 
 As with [color themes](../color-themes), you can completely customize your site's fonts within minutes of creating a new site. How you do it depends on how much control and customization you need.
 
@@ -145,7 +175,9 @@ Your final step is to go back to your `config.toml` file and add the `font-famil
 
 Here is what this could look like (thanks to workshop participant [Issac Lee](https://github.com/issactoast)!)
 
-![](isaac-font.png)
+```{r results="asis"}
+include_graphics("isaac-font.png")
+```
 
 If you do all this, you have my consent to delete the theme's `static/fonts/` folder that holds all the custom embedded fonts so you aren't carrying those unnecessary files around with your site (do not delete the `static/webfonts/` folder- that holds the [Font Awesome icons](https://fontawesome.com/)!).
 

@@ -1,3 +1,4 @@
 "file" "checksum"
+"content/blog/fonts/index.Rmd" "dba3569adaa5a6d87dfaf3a6d8180084"
 "content/blog/rmarkdown/index.Rmarkdown" "843b9c09da10154de0f95c7b0cb03dcb"
 "content/blog/spoonful-series/03-spoonful/index.Rmarkdown" "177820de325f03e1756d8af766ccaab5"
